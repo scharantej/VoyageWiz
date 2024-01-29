@@ -1,0 +1,42 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Ticket</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Book Ticket</h1>
+
+<form action="/book_ticket" method="POST">
+<label for="origin">Origin:</label>
+<input type="text" name="origin" id="origin">
+
+<label for="destination">Destination:</label>
+<input type="text" name="destination" id="destination">
+
+<label for="travel_date">Travel Date:</label>
+<input type="date" name="travel_date" id="travel_date">
+
+<label for="return_date">Return Date:</label>
+<input type="date" name="return_date" id="return_date">
+
+<label for="passenger_count">Passenger Count:</label>
+<input type="number" name="passenger_count" id="passenger_count">
+
+<label for="flight_class">Flight Class:</label>
+<select name="flight_class" id="flight_class">
+<option value="Economy">Economy</option>
+<option value="Business">Business</option>
+<option value="First Class">First Class</option>
+</select>
+
+<input type="submit" value="Book Ticket">
+</form>
+</body>
+</html>
+
+
