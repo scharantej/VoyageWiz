@@ -1,0 +1,35 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create Discount</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Create Discount</h1>
+
+<form action="/create_discount" method="POST">
+<label for="discount_code">Discount Code:</label>
+<input type="text" name="discount_code" id="discount_code">
+
+<label for="discount_type">Discount Type:</label>
+<select name="discount_type" id="discount_type">
+<option value="Percentage">Percentage</option>
+<option value="Amount">Amount</option>
+</select>
+
+<label for="discount_amount">Discount Amount:</label>
+<input type="number" name="discount_amount" id="discount_amount">
+
+<label for="expiration_date">Expiration Date:</label>
+<input type="date" name="expiration_date" id="expiration_date">
+
+<input type="submit" value="Create Discount">
+</form>
+</body>
+</html>
+
+
