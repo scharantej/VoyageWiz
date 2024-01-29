@@ -1,0 +1,38 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Discounts</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Discounts</h1>
+
+<table>
+<thead>
+<tr>
+<th>Discount Code</th>
+<th>Discount Type</th>
+<th>Discount Amount</th>
+<th>Expiration Date</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+{% for discount in discounts %}
+<tr>
+<td>{{ discount.discount_code }}</td>
+<td>{{ discount.discount_type }}</td>
+<td>{{ discount.discount_amount }}</td>
+<td>{{ discount.expiration_date }}</td>
+<td><a href="/remove_discount/{{ discount.discount_code }}">Remove</a></td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+</body>
+</html>
+
